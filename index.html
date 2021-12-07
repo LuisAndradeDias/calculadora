@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <section class="container-section">
+        <div class="sub-container-div">
+            <div class="display-div">
+                <p class="display"></p>
+            </div>
+            <div class="keys">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <div class="btn clear" onclick="clearAll()">C</div>
+                        </td>
+                        <td colspan="2">
+                            <div class="btn back" onclick="clearOne()">&#8249;</div>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="btn" onclick="insert('**')">x<sup>y</sup></div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="squareRoot('√')">&radic;</div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="insert('/')">&#xf7;</div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="insert('*')">&#xd7;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="btn" onclick="insert('7')">7</div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="insert('8')">8</div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="insert('9')">9</div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="insert('-')">&#x2013;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="btn" onclick="insert('4')">4</div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="insert('5')">5</div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="insert('6')">6</div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="insert('+')">&#x2b;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="btn" onclick="insert('1')">1</div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="insert('2')">2</div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="insert('3')">3</div>
+                        </td>
+                        <td rowspan="2">
+                            <div class="btn results" onclick="calculate()">&#x3d;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="btn zero" onclick="insert('0')">0</div>
+                        </td>
+                        <td>
+                            <div class="btn" onclick="insert('.')">.</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

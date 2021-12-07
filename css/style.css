@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap%27');
+
+:root {
+    --color: rgb(95, 95, 95);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: #fff;
+}
+
+body {
+    overflow: hidden;
+    background: rgb(138, 138, 138);
+}
+
+/* KEYS */
+.display {
+    border-radius: 10px;
+    color: #000;
+    height: 40px;
+    font-size: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.btn {
+    user-select: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 55px;
+    width: 60px;
+    border: none;
+    background: rgb(95, 95, 95);
+    transition: .2s, color, .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background: rgb(0, 0, 0);
+}
+
+.results {
+    height: 111px;
+}
+
+.zero,
+.back,
+.clear {
+    width: 122px;
+}
+
+
+/* CONTAINERS */
+.container-section {
+    border-radius: 15px;
+    padding: 15px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-container-div {
+    width: 290px;
+}
+
+.display-div {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 30px;
+    background: rgb(95, 95, 95);
+    position: relative;
+}
+
+.keys {
+    background: #fff;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* RESPONSIVE */
+
+@media all and (max-width: 320px) {
+    .container-section {
+        border-radius: 15px;
+        padding: 15px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        border: 2px solid red;
+    }
+
+    .btn {
+        height: 44px;
+        width: 50px;
+    }
+
+    .zero,
+    .back,
+    .clear {
+        width: 102px;
+    }
+
+    .results {
+        height: 90px;
+    }
+
+    .sub-container-div {
+        width: 250px;
+    }
+}
