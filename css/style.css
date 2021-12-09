@@ -33,14 +33,16 @@ body {
 }
 
 .btn {
+    color: #000;
     user-select: none;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     border-radius: 10px;
     height: 55px;
     width: 60px;
     border: none;
-    background: rgb(95, 95, 95);
+    background: #b6b6b6df;
+    /* background: rgb(156, 156, 156); */
     transition: .2s, color, .2s;
     display: flex;
     justify-content: center;
@@ -48,15 +50,32 @@ body {
 }
 
 .btn:hover {
-    background: rgb(0, 0, 0);
+    background: rgba(48, 48, 48, 0.584)
 }
+
+.btn-calc {
+    background: rgba(167, 240, 240, 0.74);
+}
+
+.btn-calc:hover {
+    background: rgba(80, 216, 216, 0.74);
+}
+
+.results,
+.clear {
+    background: rgb(247, 146, 146);
+}
+
+.results:hover,
+.clear:hover {
+    background: rgb(243, 104, 104);
+}
+
 
 .results {
     height: 111px;
 }
 
-.zero,
-.back,
 .clear {
     width: 122px;
 }
@@ -111,17 +130,12 @@ body {
         align-items: center;
     }
 
-    table {
-        border: 2px solid red;
-    }
 
     .btn {
         height: 44px;
         width: 50px;
     }
 
-    .zero,
-    .back,
     .clear {
         width: 102px;
     }

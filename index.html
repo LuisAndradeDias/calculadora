@@ -21,24 +21,25 @@
                         <td colspan="2">
                             <div class="btn clear" onclick="clearAll()">C</div>
                         </td>
-                        <td colspan="2">
-                            <div class="btn back" onclick="clearOne()">&#8249;</div>
+                        <td>
+                            <div class="btn btn-calc" onclick="insert('(')">(</div>
                         </td>
-
-
+                        <td>
+                            <div class="btn btn-calc" onclick="insert(')')">)</div>
+                        </td>
                     </tr>
-                    <tr>
+                    <tr>65*4
                         <td>
-                            <div class="btn" onclick="insert('**')">xʸ</div>
+                            <div class="btn btn-calc" onclick="insert('**')">xʸ</div>
                         </td>
                         <td>
-                            <div class="btn" onclick="squareRoot('√')">&radic;</div>
+                            <div class="btn btn-calc" onclick="squareRoot('√')">&radic;</div>
                         </td>
                         <td>
-                            <div class="btn" onclick="insert('/')">&#xf7;</div>
+                            <div class="btn btn-calc" onclick="insert('/')">&#xf7;</div>
                         </td>
                         <td>
-                            <div class="btn" onclick="insert('*')">&#xd7;</div>
+                            <div class="btn btn-calc" onclick="insert('*')">&#xd7;</div>
                         </td>
                     </tr>
                     <tr>
@@ -52,7 +53,7 @@
                             <div class="btn" onclick="insert('9')">9</div>
                         </td>
                         <td>
-                            <div class="btn" onclick="insert('-')">&#x2013;</div>
+                            <div class="btn btn-calc" onclick="insert('-')">&#x2013;</div>
                         </td>
                     </tr>
                     <tr>
@@ -66,7 +67,7 @@
                             <div class="btn" onclick="insert('6')">6</div>
                         </td>
                         <td>
-                            <div class="btn" onclick="insert('+')">&#x2b;</div>
+                            <div class="btn btn-calc" onclick="insert('+')">&#x2b;</div>
                         </td>
                     </tr>
                     <tr>
@@ -80,15 +81,19 @@
                             <div class="btn" onclick="insert('3')">3</div>
                         </td>
                         <td rowspan="2">
-                            <div class="btn results" onclick="calculate()">&#x3d;</div>
+                            <div class="btn results" onclick="calculate()">=</div>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="1">
                             <div class="btn zero" onclick="insert('0')">0</div>
                         </td>
                         <td>
                             <div class="btn" onclick="insert('.')">.</div>
+                        </td>
+                        <td colspan="1">
+                            <div class="btn back" onclick="clearOne()">&laquo;
+                            </div>
                         </td>
                     </tr>
                 </table>
